@@ -9,11 +9,8 @@ class Triangle
     @sides << side_2
     @sides << sides_3
     if raise_error?
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      raise TriangleError
+    end
   end
 
   def raise_error?
