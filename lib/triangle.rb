@@ -22,7 +22,7 @@ class Triangle
       true
     elsif @sides.any?{|side| side < 0.1}
       true
-    elsif @side_1 + @side_2 < @side_3 || @side_1 + @side_3 < @side_2 || @side_2 + @side_3 < @side_1
+    elsif @side_1 + @side_2 <= @side_3 || @side_1 + @side_3 <= @side_2 || @side_2 + @side_3 <= @side_1
       true
     end
   end
