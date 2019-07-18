@@ -11,7 +11,7 @@ class Triangle
     if raise_error?
       raise TriangleError
     else
-      self.kind
+      kind
     end
   end
 
