@@ -11,7 +11,6 @@ class Triangle
     @sides << side_2
     @sides << side_3
     if raise_error? == true
-      binding.pry
       raise TriangleError
     else
       kind
