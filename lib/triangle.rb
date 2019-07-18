@@ -11,9 +11,11 @@ class Triangle
     raise_error?
   end
 
-  def raise_error
+  def raise_error?
     if @sides.any?(0)
     elsif @sides.any?{|side| side < 1}
+    elsif @side_1 + @side_2 < @side_3 || @side_1 + @side_3 < @side_2 || @side_2 + @side_3 < @side 1
+    end
 
   def kind
     if @side_1 == @side_2 && @side_1 == @side_3
