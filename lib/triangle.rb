@@ -10,6 +10,8 @@ class Triangle
     @sides << sides_3
     if raise_error?
       raise TriangleError
+    else
+      self.kind
     end
   end
 
