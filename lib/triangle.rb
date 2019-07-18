@@ -8,7 +8,7 @@ class Triangle
     @sides << side_1
     @sides << side_2
     @sides << side_3
-    if raise_error?
+    if raise_error? == true
       raise TriangleError
     else
       kind
