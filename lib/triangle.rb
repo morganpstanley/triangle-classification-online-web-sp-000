@@ -20,6 +20,7 @@ class Triangle
     elsif @sides.any?{|side| side < 1}
     elsif @side_1 + @side_2 < @side_3 || @side_1 + @side_3 < @side_2 || @side_2 + @side_3 < @side 1
     end
+  end
 
   def kind
     if @side_1 == @side_2 && @side_1 == @side_3
