@@ -21,7 +21,7 @@ class Triangle
   def raise_error?
     if @sides.any?(0)
       true
-    elsif @sides.any?{|side| side < 1}
+    elsif @sides.any?{|side| side < 0.1}
       true
     elsif @side_1 + @side_2 < @side_3 || @side_1 + @side_3 < @side_2 || @side_2 + @side_3 < @side_1
       true
