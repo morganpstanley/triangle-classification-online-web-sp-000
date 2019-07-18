@@ -7,7 +7,7 @@ class Triangle
     @sides = []
     @sides << side_1
     @sides << side_2
-    @sides << sides_3
+    @sides << side_3
     if raise_error?
       raise TriangleError
     else
